@@ -1,7 +1,7 @@
 {
   "name": "@harnessgg/electron",
   "version": "0.1.0",
-  "description": "CLI harness for AI agents to automate and test Electron apps",
+  "description": "CLI harness for AI agents to test Electron apps",
   "main": "dist/cli.js",
   "scripts": {
     "test": "vitest run",
@@ -25,6 +25,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@harnessgg/electron": "^0.1.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^25.2.3",
     "tsx": "^4.21.0",
@@ -36,5 +37,8 @@
     "README.md",
     "LICENSE",
     "docs"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
